@@ -54,7 +54,7 @@ li {
 .pageButtons {
     float: right;
     clear: both;
-    padding-top: 1%;
+    margin: 0;
     margin-right: 10px;
 }
 
@@ -64,7 +64,7 @@ button {
     border-width: .75px;
     height: 25px;
     background-color: white;
-    
+    vertical-align: top;
 }
 
 .pageButtons li:first-child button {
@@ -96,27 +96,35 @@ button {
     position: relative;
     top: 14%;
     text-align: center;
-    padding-top: 15px
+    padding-top: 15px;
 }
 
-.pageTabs ul {
-    position: relative;
-    left: 45px;
-}
-
-.pageTabs li {
-    padding: 2px 5px 2px 5px;
+.pageTabs div {
+    display: inline;
     border-right: 1px solid lightgrey;
+    padding: 6px 10px 6px 10px;
 }
 
-.pageTabs li:first-child {
-    border: none;
+.tabOptions:hover {
+    border-bottom: 2.5px solid darkslateblue;
+}
+
+.pageTabs :last-child {
+    border-right: none;
+}
+
+#mainTab {
+    border-right: none;
     font-weight: bold;
-    padding-right: 10px;
+    margin-left: 20%;
+    padding: 0;
+    padding-bottom: 15px;
+    border-bottom: 2.5px solid darkslateblue;
 }
 
-.pageTabs li:last-child {
-    border: none;
+#mainTab:hover {
+    padding-bottom: 6px;
+    border-bottom: 2.5px solid darkslateblue;
 }
 
 select {
