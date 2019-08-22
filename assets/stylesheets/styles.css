@@ -44,7 +44,7 @@ header {
 }
 
 ul {
-    list-style: none;
+    list-style: none;    
 }
 
 li {
@@ -59,9 +59,27 @@ li {
 }
 
 button {
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
-    border-width: 0.75px;
+    border-top-left-radius: 7.5%;
+    border-bottom-left-radius: 7.5%;
+    border-width: .75px;
+    height: 25px;
+    background-color: white;
+    
+}
+
+.pageButtons li:first-child button {
+    border-top-right-radius: 7.5%;
+    border-bottom-right-radius: 7.5%;
+}
+
+.pageButtons li:last-child button {
+    border-radius: 0;
+    border-top-right-radius: 7.5%;
+    border-bottom-right-radius: 7.5%;
+}
+
+.pageButtons li:nth-child(3) button {
+    border-radius: 0;
 }
 
 .pageButtons li {
@@ -74,7 +92,7 @@ button {
 
 .pageTabs {
     background-color: ghostwhite;
-    height: 40px;
+    height: 35px;
     position: relative;
     top: 14%;
     text-align: center;
@@ -83,7 +101,7 @@ button {
 
 .pageTabs ul {
     position: relative;
-    left: 30px;
+    left: 45px;
 }
 
 .pageTabs li {
